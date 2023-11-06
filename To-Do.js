@@ -13,7 +13,7 @@ function display(){
     let concatenate = '';
     console.log(array);
     for (let i=0;i<arrayLen;i++){
-        concatenate += `<p> class="paragraph-element">${array[i]}</p><button class="remove-button" onclick="remove(${i})" >Remove</button>`;
+        concatenate += `<p class="paragraph-element">${array[i]}</p><button class="remove-button" onclick="remove(${i})" >Remove</button>`;
     }
     document.querySelector('.display-element').innerHTML = concatenate;
 }
